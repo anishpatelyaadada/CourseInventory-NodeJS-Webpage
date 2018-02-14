@@ -1,0 +1,24 @@
+.buttonLayout{
+    margin: center;
+    text-align: center;
+    padding: 10px;
+    background-color: cornflowerblue;
+}
+.headerTop {
+    background-color: #bafcc3;
+}
+form {
+align-content: left;
+
+}
+body {
+    background-color:#fffdd6;
+    
+}   
+.resultFound{
+    background-color: #6bfa47;
+    padding: 5px;
+}
+input:hover{
+    background-color: #86f56a;
+}

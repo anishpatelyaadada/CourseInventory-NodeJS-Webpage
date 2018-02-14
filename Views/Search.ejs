@@ -1,0 +1,54 @@
+<!--
+    search the course in the system using the Course_Number
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <title>TSU/UCC</title>
+        <link href="/LayoutScript/CSS/Style.css" rel="stylesheet" type="text/css" /> 
+        <script src="/LayoutScript/JS/Back.js" type="text/javascript"></script>
+</head>
+
+<body>
+<br/>
+    <header class = "headerTop">
+        <h1 align="center" >
+            Texas Southern University<br>
+            University Curriculum Council<br>
+            
+     _________________________________________________
+    </h1>
+    <h3 align="center" >
+           Course Inventory Search<br>
+     _________________________________________________
+     <br><br>
+    </h3>    
+    </header>
+    
+    <form id="SEARCH_FORM" action="/Search" method="POST">	
+            <label> Course Number :- <input type="text" name = "Course_Number" placeholder="Course Number ...." size="6" maxlength="6" /> </label> 
+            <button type ="submit">Search</button><br><br>   
+    </form>
+
+    <div class="buttonLayout">
+        <button id="HomePage">Main Menu</button>
+        </div>  
+
+
+        <% if (data.resultsFound && data.show) { %>
+            <div class="resultFound">
+                <h2>Search Results Displayed</h2>
+                <label for="Course_Number">Course Number: - </label><span><%= data.IncomingFormData.Course_Number %></span> <br />
+                <label for="Course_Title">Course Title: - </label><span><%= data.IncomingFormData.Course_Title %></span><br />
+                <label for="Credit_Hours">Credit Hours: - </label><span><%= data.IncomingFormData.Credit_Hours %></span> <br />
+            </div>
+        <% } else if (data.show) { %>
+            <p>No Results Found!</p>
+        <% } %>
+
+    <footer>
+
+    </footer> 
+</body>
+</html>

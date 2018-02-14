@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+    Insert the data to XAMPP MySQL database after submiting the form
+-->
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <title>TSU/UCC</title>
+        <link href="/LayoutScript/CSS/Style.css" rel="stylesheet" type="text/css" /> 
+        <script src="/LayoutScript/JS/Navigation.js" type="text/javascript"></script>
+        <script src="/LayoutScript/JS/SubmitForm.js" type="text/javascript"></script>
+        <script src="/LayoutScript/JS/Back.js" type="text/javascript"></script>
+    
+</head>
+
+<body>
+<br/>
+
+    <header class = "headerTop">
+            <h1 align="center">
+                    Texas Southern University<br>
+                    University Curriculum Council<br>
+             _________________________________________________
+            </h1>
+     <h3 align="center">
+           Add New Course to the Inventory<br>
+             _________________________________________________
+            <br><br>
+        </h3>    
+    </header>
+
+    <form id="SUBMIT_FORM">
+
+           <label> Course Number :- <input type="text"  id="Course_Number" placeholder="Course Number ...." size="6" maxlength="6" /></label><br><br>
+           <label> Course Title :- <input type="text"  id="Course_Title" placeholder="Course Title ...." size="25" maxlength="25" /></label><br><br>
+            <label>  Credit Hour :- <input type="text"  id="Credit_Hours" placeholder="Cr Hr ...." size="1" maxlength="1" /></label><br><br>
+          <div class="buttonLayout">
+            <button type ="submit">Add Course</button>
+           <button type ="reset">Reset / Cancel</button><br>
+        </div>
+            
+    </form>
+
+    <div class="buttonLayout">
+    <button id="HomePage">Main Menu</button>
+    </div>
+    <footer>
+
+    </footer> 
+</body>
+</html>
